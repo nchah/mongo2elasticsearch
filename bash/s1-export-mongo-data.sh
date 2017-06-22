@@ -4,8 +4,9 @@
 
 # --db = the database
 # -c = the collection in the database
+# -f = the fields to export
 # -q = the query to limit what is exported
 # --limit = how many documents to export
 # --out = output file
-mongoexport --db <db> -c <collection> -q '{ words: { $gt: {} } }' --limit 10 --out $1
+mongoexport --db <db> -c <collection> -f <fields> -q '{ words: { $gt: {} } }' --limit 10 --out $1
 
