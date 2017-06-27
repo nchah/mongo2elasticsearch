@@ -36,5 +36,11 @@ bash
 
 Run scripts in sequential order: `s1-export-mongo-data.sh`, `s2-preprocess-mongo-data.sh`, `s3-index-elasticsearch.sh` 
 
+## Documentation
+
+- [Mongoexport](https://docs.mongodb.com/manual/reference/program/mongoexport/)
+- [Elasticsearch Reference](https://www.elastic.co/guide/en/elasticsearch/reference/index.html)
+- [Python elasticsearch client](https://elasticsearch-py.readthedocs.io)
+
 
 
