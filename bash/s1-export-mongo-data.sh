@@ -8,5 +8,10 @@
 # -q = the query to limit what is exported
 # --limit = how many documents to export
 # --out = output file
-mongoexport --db <db> -c <collection> -f <fields> -q '{ words: { $gt: {} } }' --limit 10 --out $1
+
+mongoexport --db <db> -c <collection> -f <fields> -q '{ }' --limit 10 --out $1
+
+# Example:
+# - q = get the documents where the "words" array is non-empty
+# mongoexport --db <db> -c <collection> -f <fields> -q '{ words: { $gt: {} } }' --limit 10 --out $1
 
