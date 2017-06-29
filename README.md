@@ -34,7 +34,8 @@ bash
 
 ## Workflow
 
-Run scripts in sequential order: `s1-export-mongo-data.sh`, `s2-preprocess-mongo-data.sh`, `s3-index-elasticsearch.sh` 
+Run scripts in sequential order to export MongoDB data and load it into Elasticsearch: `s1-export-mongo-data.sh`, `s2-preprocess-mongo-data.sh`, `s3-index-elasticsearch.sh` 
+`s4-es-query.py` can be used to run queries on Elasticsearch.
 
 ## Documentation
 
