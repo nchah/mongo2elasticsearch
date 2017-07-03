@@ -9,11 +9,15 @@ es = Elasticsearch()
 
 def get_queries(input_file):
     """ Get the list of queries from an external file"""
+    #with open(input_file, "r") as f:
+    #    f.read()
     return queries
 
 
 def query_es():
     """ """
+    # queries = get_queries()  # Specify input
+
     response = es.search(index="", doc_type="", body={"query": {}})
 
     print("%d documents found" % response['hits']['total'])
