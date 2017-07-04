@@ -37,11 +37,19 @@ bash
 Run scripts in sequential order to export MongoDB data and load it into Elasticsearch: `s1-export-mongo-data.sh`, `s2-preprocess-mongo-data.sh`, `s3-index-elasticsearch.sh` 
 `s4-es-query.py` can be used to run queries on Elasticsearch.
 
+
 ## Documentation
 
 - [Mongoexport](https://docs.mongodb.com/manual/reference/program/mongoexport/)
 - [Elasticsearch Reference](https://www.elastic.co/guide/en/elasticsearch/reference/index.html)
 - [Python elasticsearch client](https://elasticsearch-py.readthedocs.io)
+
+
+## Other Links
+
+- [NLPchina/elasticsearch-sql](https://github.com/NLPchina/elasticsearch-sql) - Query Elasticsearch with SQL syntax
+- [appbaseio/mirage](https://github.com/appbaseio/mirage) - GUI for Elasticsearch queries
+
 
 
 
