@@ -14,18 +14,28 @@ def get_queries(input_file):
     return queries
 
 
-def query_es():
+def query_es(query_dict):
     """ """
     # queries = get_queries()  # Specify input
+    response = es.search(index="", doc_type="", body={"query": {query_dict}})
+    return response
 
-    response = es.search(index="", doc_type="", body={"query": {}})
+
+def store_output(resp):
+    """ Store the ES response in the desired format """
+    # Set how the query responses should be stored
 
     print("%d documents found" % response['hits']['total'])
     for doc in response['hits']['hits']:
         print("%s) %s" % (doc['_id'], doc['_source']['content']))  # Adjust the JSON fields
 
-    # Set how the query responses should be stored
 
+def main():
+    """ """
+    queries = get_queries()
+    for query in queries:
+        response = query_es(query)
+        store_output(response)
 
 
 if __name__ == '__main__':
@@ -33,5 +43,5 @@ if __name__ == '__main__':
     #parser.add_argument('markerset_file', help='Path to the input data file')
     #args = parser.parse_args()
     #main(args.input_file)
-    query_es()
+    main()
 
