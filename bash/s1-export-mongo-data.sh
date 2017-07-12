@@ -11,6 +11,10 @@
 
 mongoexport --db <db> -c <collection> -f <fields> -q '{ }' --limit 10 --out $1
 
+# Run with nohup for large data sets:
+#$ nohup mongoexport --db <db> -c <collection> -f <fields> -q '{ }' --limit 10 --out $1 &
+
+
 # Example:
 # - q = get the documents where the "words" array is non-empty
 # mongoexport --db <db> -c <collection> -f <fields> -q '{ words: { $gt: {} } }' --limit 10 --out $1
