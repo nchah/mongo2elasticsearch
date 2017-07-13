@@ -14,7 +14,7 @@ $ tree
 │   ├── s2-preprocess-mongo-data--linux.sh
 │   └── s3-index-elasticsearch.sh
 ├── python
-│   └── es-query.py
+│   └── s4-es-query.py
 └── tests
     ├── export-1-preprocessed.json
     └── export-1.json
@@ -22,13 +22,15 @@ $ tree
 
 ## Dependencies
 
+Dependencies and utilities that are used for each script.
+
 ```
 bash
     ├── s1-export-mongo.sh              <-- mongoexport
     ├── s2-preprocess-mongo-data.sh     <-- sed, gsed
     └── s3-index-elasticsearch.sh       <-- curl
 ├── python
-    └── es-query.py                     <-- elasticsearch
+    └── s4-es-query.py                  <-- elasticsearch (Python lib)
 ```
 
 
