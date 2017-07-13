@@ -1,6 +1,6 @@
 # mongo2elasticsearch
 
-Load MongoDB data into Elasticsearch.
+Load MongoDB data into Elasticsearch. Pre-process, load, and query it.
 
 ## Directory
 
@@ -8,12 +8,11 @@ Load MongoDB data into Elasticsearch.
 $ tree
 .
 ├── README.md
-├── bash
+├── scripts
 │   ├── s1-export-mongo-data.sh
 │   ├── s2-preprocess-mongo-data--gsed.sh
 │   ├── s2-preprocess-mongo-data--linux.sh
-│   └── s3-index-elasticsearch.sh
-├── python
+│   ├── s3-index-elasticsearch.sh
 │   └── s4-es-query.py
 └── tests
     ├── export-1-preprocessed.json
@@ -25,11 +24,10 @@ $ tree
 Dependencies and utilities that are used for each script.
 
 ```
-bash
+scripts
     ├── s1-export-mongo.sh              <-- mongoexport
     ├── s2-preprocess-mongo-data.sh     <-- sed, gsed
-    └── s3-index-elasticsearch.sh       <-- curl
-├── python
+    ├── s3-index-elasticsearch.sh       <-- curl
     └── s4-es-query.py                  <-- elasticsearch (Python lib)
 ```
 
