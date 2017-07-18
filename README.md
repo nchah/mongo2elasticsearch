@@ -9,6 +9,7 @@ $ tree
 .
 ├── README.md
 ├── scripts
+│   ├── s0-explore-data.sh
 │   ├── s1-export-mongo-data.sh
 │   ├── s2-preprocess-mongo-data--gsed.sh
 │   ├── s2-preprocess-mongo-data--linux.sh
@@ -25,6 +26,7 @@ Dependencies and utilities that are used for each script.
 
 ```
 scripts
+    ├── s0-explore-data.sh              <-- ls, wc, tree
     ├── s1-export-mongo.sh              <-- mongoexport
     ├── s2-preprocess-mongo-data.sh     <-- sed, gsed
     ├── s3-index-elasticsearch.sh       <-- curl
