@@ -22,7 +22,7 @@ $ tree
 
 ## Dependencies
 
-Dependencies and utilities that are used for each script.
+Dependencies and utilities that are required for each script.
 
 ```
 scripts
@@ -37,7 +37,7 @@ scripts
 ## Workflow
 
 Run scripts in sequential order to export MongoDB data and load it into Elasticsearch: `s1-export-mongo-data.sh`, `s2-preprocess-mongo-data.sh`, `s3-index-elasticsearch.sh` 
-`s4-es-query.py` can be used to run queries on Elasticsearch.
+`s4-es-query.py` can be used to run queries on any data loaded in Elasticsearch.
 
 
 ## Documentation
