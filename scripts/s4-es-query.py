@@ -23,11 +23,11 @@ def query_es(query_dict):
 
 def store_output(resp):
     """ Store the ES response in the desired format """
-    # Set how the query responses should be stored
-
+    # Comment out as needed
     print("%d documents found" % response['hits']['total'])
     for doc in response['hits']['hits']:
         print("%s) %s" % (doc['_id'], doc['_source']['content']))  # Adjust the JSON fields
+    # Use csv library to write output
 
 
 def main():
